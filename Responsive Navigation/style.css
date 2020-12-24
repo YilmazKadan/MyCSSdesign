@@ -1,0 +1,97 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body{
+	overflow:hidden;
+}
+nav {
+	max-width: 1200px;
+	margin:0px auto;
+	padding: 10px 20px;
+	display: flex;
+	height: 10vh;
+	background-color:#297cdf;
+	align-items: center;
+
+}
+nav ul{
+	margin-left:auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+nav ul li{
+	list-style: none;
+}
+nav ul li a{
+	display: inline-block;
+	text-decoration: none;
+	color:white;
+	margin-right: 10px;
+	font-size: 18px;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 40px;
+	transition: 300ms all ease-in-out;
+}
+nav ul li a:hover{
+	background-color: white;
+	color:black;
+}
+nav .hamburger{
+	display: none;
+	cursor: pointer;
+	padding: 0 10px;
+}
+.ml-auto{
+	margin-left:auto;
+}
+nav  .hamburger .line{
+	background-color: white;
+	width: 30px;
+	height: 3px;
+	margin-bottom: 6px;
+	transition: all .5s ease-in-out;
+}
+@media screen and (max-width: 1024px){
+	h1{
+		font-size:21px;
+	}
+	nav ul li a{
+		width: 150px;
+		text-align: center;
+	}
+}
+@media screen and (max-width:768px){
+	nav .hamburger {
+		display: block;
+	}
+	nav ul{
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+		justify-content: center;
+		width: 100%;
+		height:90vh;
+		top:10vh;
+		background-color:#297cdf;
+		right:0;
+		transition:100ms ease-in-out;
+		transform: translateX(100%);
+	}
+	nav ul li a {
+		width: 150px;
+		border:1px solid white;
+		margin-bottom:30px;
+	}
+
+}
+.toggle{
+	transform: translateX(0%);
+}
