@@ -116,6 +116,7 @@ a{
 }
 .content .message-content{
 	flex:1;
+	overflow: auto;
 }
 .content .info-me{
 	height: 50px;
@@ -175,6 +176,7 @@ a{
 }
 .message-content {
 	display: flex;
+	flex: 1 1 0%;
 	padding: 30px;
 	flex-direction: column;
 }
