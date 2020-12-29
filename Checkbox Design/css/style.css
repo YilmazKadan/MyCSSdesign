@@ -1,0 +1,52 @@
+
+*{
+	margin:0;
+	padding:0;
+	font-family:heebo;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #2c3e50;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.form{
+	max-width:80%;
+	height: auto;
+	padding:40px 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	clear:both;
+	-webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+	box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+	
+}
+.form form{
+	display:flex;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.form input[type='radio']{
+	display: none;
+}
+.form label:not(:last-of-type){
+	border-right: 1px solid #fff;
+}
+.form label{
+	background-color: #3498db;
+	padding: 10px;
+	display: inline-block;
+	color:white;
+	min-width: 100px;
+	text-align: center;
+	cursor:pointer;
+	transition: 300ms all;
+}
+.form form input[type='radio']:checked+label{
+	background-color: #2c3e50;
+}

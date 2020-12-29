@@ -1,0 +1,64 @@
+
+*{
+	margin:0;
+	padding:0;
+	font-family:heebo;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fc00ff;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.form{
+	width: 400px;
+	height: 400px;
+	padding:40px 20px;
+	display: flex;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.form form{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+.form form h4{
+	color:#77B7FF;
+	font-size:35px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.form form p{
+	font-size:16px;
+	color:rgba(0,0,0,.7);
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.form form input{
+	margin-bottom: 10px;
+	height: 50px;
+	padding: 10px;
+	border-radius: 10px;
+	font-size:17px;
+	font-weight: 400;
+	border:none;
+	color:rgba(0,0,0,.7);
+	background-color:#E2E2E2;
+}
+.form form input[type='submit']{
+	background-color: #3498db;
+	color:black;
+	font-size:20px;
+	cursor: pointer;
+	color:white;
+
+}
+.form form input:focus{
+	outline: none;
+}
