@@ -418,6 +418,10 @@ footer .container .select-box .select-element option{
 	.show-case .content .container{
 		padding:0 20px;
 	}
+	.show-case .content .container .email .email-form .btn.btn-content{
+		font-size:12px;
+		height: 40px;
+	}
 	.show-case .content .container h1{
 		font-size:28px;
 	}
@@ -465,7 +469,12 @@ footer .container .select-box .select-element option{
 	section.our-story .container .story-box h2{
 		font-size:18px;
 	}
-
+	section.sss .container .email .email-form .btn.btn-content{
+		font-size:14px;
+	}
+	section.sss .container .btn.btn-content{
+		font-size:20px;
+	}
 	/* FOOTER SECTİON */
 }
 
@@ -493,8 +502,10 @@ footer .container .select-box .select-element option{
 	}
 	section.sss .container .accordion{
 		font-size:20px;
+		min-width: 100%
 	}
-	section.sss .container .btn.btn-content{
+	section.sss .container .accordion .accordion-button{
 		font-size:20px;
 	}
+
 }
