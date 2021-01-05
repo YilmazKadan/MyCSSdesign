@@ -4,8 +4,9 @@
 	box-sizing: border-box;
 	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-body{
-	overflow:hidden;
+body,html{
+	overflow-x:hidden!important;
+	max-width: 100%;
 }
 nav {
 	max-width: 1200px;
@@ -68,8 +69,17 @@ nav  .hamburger .line{
 	}
 }
 @media screen and (max-width:768px){
+	body{
+		max-width: 100%;
+		overflow-x:hidden!important;
+	}
+	nav{
+		max-width: 100%;
+		overflow-x:hidden;
+	}
 	nav .hamburger {
 		display: block;
+
 	}
 	nav ul{
 		position: absolute;
